@@ -57,7 +57,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <3 6>;
+            key-positions = <0 1>;
+        };
+
+        gaming {
+            bindings = <&tog 4>;
+            key-positions = <16 17 18>;
         };
     };
 
@@ -77,10 +82,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp TILDE       &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-              &kp LEFT_SHIFT  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                             &trans                &trans                 &trans    &trans  &trans        &kp DOT
+           &kp EXCLAMATION       &kp AT_SIGN    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT     &kp CARET        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+           &kp HASH              &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&kp TILDE  &kp NON_US_BACKSLASH  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_WIN    &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &kp MINUS
+                                                &trans                &trans                 &trans          &trans           &trans        &kp DOT
             >;
         };
 
@@ -107,20 +112,10 @@
         Gaming {
             display-name = "Gaming";
             bindings = <
-            &kp Z           &kp X  &kp C      &kp V         &sl 5     &trans  &trans  &trans  &trans  &trans
-            &kp TAB         &kp Q  &kp W      &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        Gaming+ {
-            display-name = "Gaming+";
-            bindings = <
-        &kp F10  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp T     &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
-        &kp L    &kp O         &kp Y         &kp K         &kp G     &kp F5         &trans         &trans  &trans  &trans
-&trans  &to 0    &trans        &trans        &trans        &trans    &trans         &trans         &trans  &trans  &trans           &kp LA(F4)
-                               &kp J         &kp I         &kp M     &trans         &trans         &trans
+                &kp Q  &kp W  &kp F         &kp P         &kp B        &trans  &trans  &trans  &trans  &trans
+                &kp A  &kp R  &kp S         &kp T         &kp G        &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp D         &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp NUMBER_1  &kp NUMBER_2  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
